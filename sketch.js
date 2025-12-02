@@ -451,6 +451,7 @@ function yellowStarBScene(){
     bikeTimelapse.volume(0); 
     yellowStarBSceneStarted = true;
   }
+  image(bikeTimelapse, 50, 50, 400, 300);
 }
 
 function yellowStarCScene(){
@@ -458,7 +459,7 @@ function yellowStarCScene(){
   image(bikeCollage, 25, 50, 450, 300);
   if(!natalieNunn.isPlaying()){
     natalieNunn.play();
-  image(bikeTimelapse, 50, 50, 400, 300);
+
   }
   
 }
