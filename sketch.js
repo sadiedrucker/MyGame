@@ -444,7 +444,6 @@ function yellowStarAScene(){
   
 }
 function yellowStarBScene(){
-  bikeTimelapse.hide();
   background('#FFEB3B');
   if (!yellowStarBSceneStarted) {
     bikeTimelapse.loop();
