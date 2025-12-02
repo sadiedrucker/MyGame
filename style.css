@@ -3,25 +3,29 @@ html, body {
 }
 canvas {
   display: block;
-  border: 5px, solid, rgb(127, 201, 244); 
+  border: 5px solid rgb(127, 201, 244);
   margin: auto; 
 }
 
-h1{
-  color: rgb(177, 75, 92); 
-  margin: auto; 
-  background: rgb(230, 237, 194); 
-  width: 340px
-
+h1 {
+  color: rgb(177, 75, 92);
+  margin: auto;
+  background: rgb(230, 237, 194);
+  width: 340px;
 }
 
-h3{
-  color: rgb(177, 75, 92); 
-  margin: auto; 
-  background: rgb(230, 237, 194); 
-  width: 180px; 
+h3 {
+  color: rgb(177, 75, 92);
+  margin: auto;
+  background: rgb(230, 237, 194);
+  width: 180px;
 }
 
-
+h5 {
+  color: rgb(177, 75, 92);
+  margin: auto;
+  background: rgb(230, 237, 194);
+  width: 95px;
+}
 
 

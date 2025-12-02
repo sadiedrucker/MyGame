@@ -32,45 +32,142 @@ let scope5;
 let jTree; 
 let moon; 
 let montanaField; 
+let elmTreeBike; 
+let yellowStar1; 
+let yellowStar2; 
+let bikeTimelapse;
+let yellowStarBSceneStarted=false; //for bike timelapse video
+let bikeWithSal; 
+let yellowStarASceneStarted=false; //for biking with Sally video
+let bikeSelfie; 
+let bikeMirror; 
+let bikeCollage; 
+let cereal; 
+let chocolateCake; 
+let bowl; 
+let burrito; 
+let garden; 
+let mealAtWork; 
+let meal; 
+let coffeeSpill; 
+let teaTime;
+let dormCourtyard; 
+let dormHallway; 
+let yellowStar; 
+let dormDoor;
+let peek; 
+let closet; 
+let bed; 
+let TV; 
+let windowPic; 
+let rileyDisco; 
+let scClouds; 
+let scSara; 
+let drinks;
+let backInThe; 
+let natalieNunn;
+let bird; 
+let turtle;
+let betterThan;
+let alaska;
+let goldenHour;
+let treePose;
+let frog; 
+let ocean; 
+let sbWindow; 
+let iman;
+let mirrorPic;
+let music;
 
 function preload(){
-  babyPhoto=loadImage('babyPhoto.jpeg'); 
-  flower=loadImage('flower.jpg'); 
-  mirror=loadImage('mirror.jpg'); 
-  bike=loadImage('bike.jpg');
-  house=loadImage('house.jpg');
-  car=loadImage('car.jpg');
-  singlet=loadImage('singlet.jpg');
-  star=loadImage('star.jpg'); 
-  cup=loadImage('cup.jpg');
-  backArrow=loadImage('backArrow.jpg');
-  SCIACsvid=createVideo(['SCIACsvid.mov']); 
-  pinkSwirl=loadImage('pinkSwirl.jpg'); 
-  pinkStar=loadImage('pinkStar.jpg'); 
-  oliviaSunrise=loadImage('oliviaSunrise.jpg');
-  trophy=loadImage('trophy.jpg');
-  purpleHat=loadSound('purpleHat.m4a'); 
-  xcMapImg=loadImage('xcMap.jpg');
-  preNatsCourse=loadImage('preNatsCourse.png');
-  scope1=loadImage('scope1.jpg');
-  baldySunset=loadImage('baldySunset.jpg');
-  scope2=loadImage("scope2.jpg"); 
-  garden=loadImage("garden.jpg");
-  scope3=loadImage("scope3.jpg");
-  scope4=loadImage("scope4.jpg"); 
-  scope5=loadImage("scope5.jpg");
-  jTree=loadImage('jTree.jpg');
-  moon=loadImage('moon.jpg');
-  montanaField=loadImage('montanaField.jpg')
+  babyPhoto=loadImage('pics/babyPhoto.jpeg'); 
+  flower=loadImage('pics/flower.jpg'); 
+  mirror=loadImage('pics/mirror.jpg'); 
+  bike=loadImage('pics/bike.jpg');
+  house=loadImage('pics/house.jpg');
+  car=loadImage('pics/car.jpg');
+  singlet=loadImage('pics/singlet.jpg');
+  star=loadImage('pics/star.jpg'); 
+  cup=loadImage('pics/cup.jpg');
+  backArrow=loadImage('pics/backArrow.jpg');
+  SCIACsvid=createVideo(['pics/SCIACsvid.mov']); 
+  pinkSwirl=loadImage('pics/pinkSwirl.jpg'); 
+  pinkStar=loadImage('pics/pinkStar.jpg'); 
+  oliviaSunrise=loadImage('pics/oliviaSunrise.jpg');
+  trophy=loadImage('pics/trophy.jpg');
+  purpleHat=loadSound('pics/purpleHat.m4a'); 
+  xcMapImg=loadImage('pics/xcMap.jpg');
+  preNatsCourse=loadImage('pics/preNatsCourse.png');
+  scope1=loadImage('pics/scope1.jpg');
+  baldySunset=loadImage('pics/baldySunset.jpg');
+  scope2=loadImage("pics/scope2.jpg"); 
+  garden=loadImage("pics/garden.jpg");
+  scope3=loadImage("pics/scope3.jpg");
+  scope4=loadImage("pics/scope4.jpg"); 
+  scope5=loadImage("pics/scope5.jpg");
+  jTree=loadImage('pics/jTree.jpg');
+  moon=loadImage('pics/moon.jpg');
+  montanaField=loadImage('pics/montanaField.jpg'); 
+  elmTreeBike=loadImage('pics/elmTreeBike.png');
+  yellowStar1=loadImage('pics/yellowStar1.jpg'); 
+  yellowStar2= loadImage('pics/yellowStar2.jpg');
+  bikeTimelapse= createVideo(['pics/bikeTimelapse.mov']); 
+  dormCourtyard=loadImage('pics/dormCourtyard.png'); 
+  hallway=loadImage('pics/hallway.png');
+  bikeWithSal=createVideo(['pics/bikeWithSal.mov']); 
+  bikeSelfie=loadImage('pics/bikeSelfie.jpg'); 
+  bikeMirror=loadImage('pics/bikeMirror.jpg');
+  bikeCollage=loadImage('pics/bikeCollage.jpg');
+  cereal=loadImage('pics/cereal.PNG'); 
+  chocolateCake=loadImage('pics/chocolateCake.PNG');
+  bowl=loadImage('pics/bowl.PNG'); 
+  burrito=loadImage('pics/burrito.PNG'); 
+  mealAtWork=loadImage("pics/mealAtWork.jpg"); 
+  meal=loadImage("pics/meal.jpg");
+  coffeeSpill=loadImage("pics/coffeeSpill.jpg");
+  teaTime=loadImage('pics/teaTime.jpg'); 
+  dormCourtyard=loadImage('pics/dormCourtyard.png');
+  dormHallway=loadImage('pics/dormHallway.png');
+  yellowStar=loadImage('pics/yellowStar.png');
+  dormDoor=loadImage('pics/dormDoor.png'); 
+  peek=loadImage('pics/peek.png'); 
+  closet=loadImage('pics/closet.png'); 
+  bed=loadImage('pics/bed.png');
+  TV=loadImage('pics/TV.png'); 
+  windowPic=loadImage('pics/window.png');
+  bed=loadImage('pics/bed.png');
+  rileyDisco= loadImage('pics/rileyDisco.png');
+  scClouds= loadImage('pics/scClouds.png');
+  scSara=loadImage('pics/scSaraHugs.png');
+  drinks=loadImage('pics/drinks.png');
+  backInThe=loadSound('pics/backInThe.mp3');
+  natalieNunn=loadSound('pics/natalieNunn.mp3');
+  bird=loadImage('pics/bird.jpeg');
+  turtle=loadImage('pics/turtle.JPEG');
+  betterThan=loadSound('pics/betterThan.mp3')
+  alaska=loadSound('pics/alaska.mp3');
+  goldenHour=loadSound('pics/goldenHour.mp3'); 
+  treePose=loadImage('pics/treePose.png');
+  frog=loadImage('pics/frog.png'); 
+  ocean=loadImage('pics/ocean.png'); 
+  sbWindow=loadImage('pics/sbWindow.png');
+  iman=loadImage('pics/imanMirrorSelfie.png');
+  mirrorPic=loadImage('pics/mirrorPic.png'); 
+  music=loadImage('pics/music.png');
+  SCIACsvid.hide(); 
+  bikeTimelapse.hide(); 
+  bikeWithSal.hide();
 }
 
+
 function setup() {
+  
   userStartAudio();
   createCanvas(500, 400);
   imgFlower= new Button(270, 80, 60, 60, flower, () =>
     goToScene('flower')); 
   imgMirror= new Button(80, 250,60, 75, mirror, () => goToScene('mirror')); 
-  imgBike=new Button(380, 300, 90, 60, bike, () => goToScene('bike')); 
+  imgBike=new Button(380, 300, 90, 60, bike, () => goToScene('bikeScene')); 
   imgHouse=new Button(50, 80, 60, 70, house, () => goToScene('house')); 
   imgCar= new Button(230, 220, 120, 70, car, () => goToScene('car'));
   imgSinglet= new Button(400, 50, 60, 100, singlet, () => {
@@ -87,18 +184,53 @@ function setup() {
   scope4Button= new Button(150, 190, 220, 170, scope4, () => goToScene('scope4ButtonScene'));
   scope5Button= new Button(250, 200, 200, 160, scope5, () => goToScene('scope5ButtonScene'));
   moonButton=new Button(300, 60, 40, 50, moon, ()=> goToScene('moonScene'));
+  yellowStarAButton = new Button(300, 100, 70, 70, yellowStar1, () => goToScene('yellowStarAScene')); 
+  yellowStarBButton = new Button(200, 200, 60, 60, yellowStar2, () => goToScene('yellowStarBScene')); 
+  yellowStarCButton= new Button(400, 50, 30, 30, yellowStar1, () => goToScene('yellowStarCScene')); 
+  cakeButton= new Button(50, 30, 150, 150, chocolateCake, () => goToScene('cakeScene')); 
+  burritoButton= new Button(170, 150, 130, 170, burrito, ()=> goToScene('burritoScene'));
+  bowlButton=new Button(20, 250, 130, 130, bowl, () => goToScene('bowlScene'));
+  cerealButton= new Button(280, 40, 250, 250, cereal, ()=> goToScene('cerealScene'));
+  yellowStarButton= new Button(420, 200, 50, 50, yellowStar, ()=> goToScene('dormDoorScene'));
+  dormDoorButton= new Button(350, 70, 60, 60, yellowStar2, () => goToScene('firstPeek'));
+  windowButton= new Button(280, 80, 50, 50, yellowStar1, () => goToScene('windowScene'));
+  TVButton= new Button(40, 130, 40, 40, yellowStar, () => goToScene('TVScene'));
+  closetButton=new Button(400, 300, 30, 30, yellowStar2, () => goToScene('closetScene'));
+  saraButton= new Button(400, 60, 60, 60, pinkSwirl, () => goToScene('discoScene'));
+ 
   backButton = new Button(460, 360, 30, 30, backArrow, () => {
   if (scene === 'singlet') {
     SCIACsvid.stop();
     SCIACsvid.hide();
     singletStarted = false;
   }
+  if(scene=='trophySong'){
+    purpleHat.stop();
+  }
+  if(scene=='discoScene'){
+    backInThe.stop();
+  }
+  if(scene=='yellowStarCScene'){
+    natalieNunn.stop();
+  }
+  if(scene=='moonScene'){
+    betterThan.stop();
+  }
+  if(scene=='scope3ButtonScene'){
+    alaska.stop();
+  }
+  if(scene=='scope4ButtonScene'){
+    goldenHour.stop();
+  }
 
   if (sceneHistory.length > 0) {
     scene = sceneHistory.pop(); // return to last scene
   }
-});
- SCIACsvid.hide(); 
+});  
+  SCIACsvid.hide(); 
+  bikeTimelapse.hide(); 
+  bikeWithSal.hide();
+  
 }
 
 function draw() {
@@ -119,11 +251,26 @@ function draw() {
   else if(scene=='scope5ButtonScene') scope5ButtonScene();
   else if(scene=='moonScene') moonScene();
   else if(scene=='cup') cupScene(); 
+  else if(scene=='cakeScene') cakeScene();
+  else if(scene=='bowlScene') bowlScene(); 
+  else if(scene== 'cerealScene') cerealScene();
+  else if(scene=='burritoScene') burritoScene();
   else if(scene=='car') carScene();
   else if(scene=='house') houseScene(); 
-  else if(scene=='bike') bikeScene(); 
+  else if(scene=='bikeScene') bikeScene();
+  else if(scene=='yellowStarAScene') yellowStarAScene(); 
+  else if(scene=='yellowStarBScene') yellowStarBScene();
+  else if(scene=='yellowStarCScene') yellowStarCScene();
+  else if(scene=='dormDoorScene') dormDoorScene();
+  else if(scene=='firstPeek') firstPeek();
+  else if(scene=='windowScene') windowScene();
+  else if(scene=='TVScene') TVScene();
+  else if(scene=='closetScene') closetScene();
+  else if(scene=='discoScene') discoScene();
+  
+  
   else if(scene=='mirror') mirrorScene();
-  if(scene != 'menu') {
+  if(scene !== 'menu') {
     backButton.show();
   }  
   
@@ -145,8 +292,21 @@ function menuScene(){
 }
 
 function flowerScene(){
-
+  background('#709176');
+  image(scClouds, 25, 25, 225, 300);
+  image(scSara, 215, 50, 225, 300);
+  saraButton.show();
 }
+
+function discoScene(){
+  background('#CF4D6F');
+  image(rileyDisco, 225, 50, 225, 300);
+  image(drinks, 50, 25, 225, 300);
+  if(!backInThe.isPlaying()){
+    backInThe.play();
+    }
+}
+
 
 function singletScene(){
   SCIACsvid.hide();
@@ -173,7 +333,9 @@ function trackSunriseScene(){
   
 function trophySongScene(){
   background('#FFEB3B'); 
-  purpleHat.play();
+  if(!purpleHat.isPlaying()){
+    purpleHat.play();
+  }
   noStroke();
   fill('#FDBCD2'); 
   rect(40, 130, 120, 150);
@@ -210,15 +372,26 @@ function scope2ButtonScene(){
 }
 
 function scope3ButtonScene(){
+  background("#A44A3F");
+  image(treePose, 50, 25, 200, 300);
+  image(frog, 200, 60, 200, 300);
+  if(!alaska.isPlaying()){
+    alaska.play();
+    }
   
 }
 
 function scope4ButtonScene(){
-  
+  background("#CBDFBD");
+  image(sbWindow, 25, 50, 200, 300);
+  image(ocean, 250, 25, 250, 300);
+  if(!goldenHour.isPlaying()){
+    goldenHour.play();
+    }
 }
 
 function scope5ButtonScene(){
-  background("#795548")
+  background("#795548");
   image(montanaField, 10, 10, 480, 380);
   noStroke(); 
   fill("#ADA5A2"); 
@@ -226,32 +399,151 @@ function scope5ButtonScene(){
   image(jTree, 140, 30, 250, 350);
   moonButton.show();
   
+  
 }
 
 function moonScene(){
+  background('#CF4D6F');
+  noStroke();
+  fill('#FCEEF1');
+  rect(25, 25, 450, 300);
+  image(turtle, 50, 150, 150, 150);
+  image(bird,250, 50, 200, 200);
+  if(!betterThan.isPlaying()){
+    betterThan.play();
+    }
+  
   
 }
 
 function mirrorScene(){
+  background("#8E8358");
+  image(iman, 50, 50, 200, 300);
+  image(mirrorPic, 280, 25, 200, 300);
   
 }
 
 function bikeScene(){
+  background("#8E8358"); 
+  image(elmTreeBike, 25, 25, 300, 350);
+  yellowStarAButton.show(); 
+  yellowStarBButton.show(); 
+  yellowStarCButton.show(); 
+  
+}
+function yellowStarAScene(){
+  background('#009688')
+  if(!yellowStarASceneStarted) {
+    bikeWithSal.loop();
+    bikeWithSal.volume(0); 
+    yellowStarASceneStarted = true;
+  }
+  image(bikeWithSal, 25, 50, 300, 300);
+  image(bikeSelfie, 250, 25, 150, 250);
+  image(bikeMirror, 370, 200, 130, 150);
+  
+}
+function yellowStarBScene(){
+  bikeTimelapse.hide();
+  background('#FFEB3B');
+  if (!yellowStarBSceneStarted) {
+    bikeTimelapse.loop();
+    bikeTimelapse.volume(0); 
+    yellowStarBSceneStarted = true;
+  }
+}
+
+function yellowStarCScene(){
+  background('#875C74'); 
+  image(bikeCollage, 25, 50, 450, 300);
+  if(!natalieNunn.isPlaying()){
+    natalieNunn.play();
+  image(bikeTimelapse, 50, 50, 400, 300);
+  }
   
 }
 
+
 function houseScene(){
+  background("#B36A5E"); 
+  image(dormHallway, 25, 50, 200, 300);
+  image(dormCourtyard, 250, 50, 200, 300);
+  yellowStarButton.show();
+}
+
+function dormDoorScene(){
+  background("#B36A5E"); 
+  noStroke();
+  fill('#E6D5D2')
+  rect(150, 25, 250, 350);
+  image(dormDoor, 180, 50, 200, 300);
+  dormDoorButton.show();
+}
+
+function firstPeek(){
+  background("#B36A5E"); 
+  image(peek, 25, 50, 200, 300);
+  image(bed, 250, 50, 200, 300);
+  windowButton.show();
+  TVButton.show();
+  closetButton.show();
+}
+
+function windowScene(){
+  background("#B36A5E");
+  image(windowPic, 180, 50, 200, 300); 
+  dormDoorButton.show(); 
   
+}
+
+function TVScene(){
+  background("#B36A5E");
+  image(TV, 180, 50, 200, 300); 
+  dormDoorButton.show(); 
+  
+}
+
+function closetScene(){
+  background("#B36A5E"); 
+  image(closet, 180, 50, 200, 300);
+  dormDoorButton.show();
 }
 
 function carScene(){
+  background('#875C74');
+  image(music, 25, 25, 450, 350);
   
 }
 
 function cupScene(){
+  background("#AFBC88");  
+  cakeButton.show(); 
+  burritoButton.show(); 
+  bowlButton.show(); 
+  cerealButton.show(); 
   
 }
 
+function cakeScene(){
+  background("#F19C79");
+  image(teaTime, 25, 50, 450, 300);
+  
+}
+
+function burritoScene(){
+  background("#CBDFBD");
+  image(meal, 25, 50, 450, 300);
+}
+
+function cerealScene(){
+  background("#F6F4D2");
+  image(mealAtWork, 25, 50, 450, 300);
+}
+
+function bowlScene(){
+  background("#A44A3F");
+  image(coffeeSpill, 25, 50, 450, 300);
+}
 
 
 //-------------------CLASS DEFINITION--------------------------------
@@ -330,15 +622,59 @@ function mousePressed() {
   }
   else if(scene=='bikeScene'){
     backButton.handleClick();
+    yellowStarAButton.handleClick(); 
+    yellowStarBButton.handleClick(); 
+    yellowStarCButton.handleClick(); 
   }
-  else if(scene=='houseScene'){
+  else if(scene=='yellowStarAScene'){
+    backButton.handleClick();
+  }
+  else if(scene=='yellowStarBScene'){
+    backButton.handleClick();
+  }
+  else if(scene=='yellowStarCScene'){
+    backButton.handleClick();
+  }
+  
+  else if(scene=='house'){
+    backButton.handleClick();
+    yellowStarButton.handleClick();
+  }
+  else if(scene=='dormDoorScene'){
+    backButton.handleClick();
+    dormDoorButton.handleClick();
+  }
+  else if(scene=='firstPeek'){
+    windowButton.handleClick();
+    TVButton.handleClick();
+    closetButton.handleClick();
+    backButton.handleClick();
+  }
+  else if(scene=='windowScene'){
+    dormDoorButton.handleClick();
+    backButton.handleClick();
+  }
+  else if(scene=='TVScene'){
+    dormDoorButton.handleClick(); 
+    backButton.handleClick();
+  }
+  else if(scene=='closetScene'){
+    dormDoorButton.handleClick(); 
     backButton.handleClick();
   }
   else if(scene=='carScene'){
     backButton.handleClick();
   }
-  else if(scene=='cupScene'){
+  else if(scene=='cup'){
+    cakeButton.handleClick(); 
+    burritoButton.handleClick(); 
+    bowlButton.handleClick(); 
+    cerealButton.handleClick();
     backButton.handleClick();
+  }
+  else if(scene=='flower'){
+    backButton.handleClick();
+    saraButton.handleClick();
   }
     else{
     backButton.handleClick();
@@ -348,7 +684,7 @@ function mousePressed() {
 function goToScene(newScene){
   sceneHistory.push(scene); 
   scene=newScene;
-  
+
   if (scene === 'singlet') {
     SCIACsvid.show();
     singletStarted=false; 
@@ -356,3 +692,4 @@ function goToScene(newScene){
     SCIACsvid.hide();
   }
 }
+
